@@ -72,7 +72,6 @@ def try_exit(custom_map, position):
             if custom_map[next_pos[0]][next_pos[1]]:
                 if [position, direction] in change_positions:
                     in_cycle = True
-                    print(position, direction, change_positions)
                 else:
                     change_positions.append([position, direction])
                 if direction == [1, 0]:
